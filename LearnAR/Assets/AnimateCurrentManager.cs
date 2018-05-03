@@ -58,46 +58,46 @@ public class AnimateCurrentManager : MonoBehaviour
 
     //}
 
-    //public void ShowCurrentFlow(float xmin, float xmax, float ymin, float ymax)
-    //{
-    //    float scale = 0.01f;
-    //    float width_canv = 667f;
-    //    float height_canv = 504f; // w & h of image is likely smaller
+    private void Start()
+    {
+    //    Vector3 topLeft = new Vector3(-233.5f, 152, -20);
+    //    //Vector3 midTop = new Vector3(0, 152, -20);
+    //    Vector3 topRight = new Vector3(233.5f, 152, -10);
+    //    //Vector3 midRight = new Vector3(233.5f, 0, -50);
+    //    Vector3 bottomRight = new Vector3(233.5f, -152, -10);
+    //    //Vector3 midBottom = new Vector3(0, -152, -20);
+    //    Vector3 bottomLeft = new Vector3(-233.5f, -152, -10);
+    //    //Vector3 midLeft = new Vector3(-233.5f, 0, -20);
+    //    Vector3 back = new Vector3(-233.5f, 152, -10);
 
-    //    float x_orig = width_canv / 2;
-    //    float y_orig = height_canv / 2;
+    //    iTween.MoveTo(trailObj, iTween.Hash("path", new Vector3[] { topLeft, topRight, bottomRight, bottomLeft, back },
+    //"time", 10, "looptype", "loop", "isLocal", true, "orientToPath", true, "easeType", iTween.EaseType.linear));
 
-    //    float xmin_conv = (x_orig - xmin) * -1.0f;
-    //    float xmax_conv = (x_orig - xmax) * -1.0f;
-    //    float ymin_conv = (y_orig - ymin);
-    //    float ymax_conv = (y_orig - ymax);
+        //Vector3[] list = { topLeft, topRight, bottomRight, bottomLeft, back };
+        //Hashtable opts = new Hashtable();
 
-    //    Vector3 topLeft = new Vector3(xmin_conv, ymin_conv, -10);
-    //    Vector3 topRight = new Vector3(xmax_conv, ymin_conv, -10);
-    //    Vector3 bottomRight = new Vector3(xmax_conv, ymax_conv, -10);
-    //    Vector3 bottomLeft = new Vector3(xmin_conv, ymax_conv, -10);
-    //    Vector3 back = new Vector3(xmin_conv, ymin_conv, -10);
+        //foreach (var pt in PointTransforms)
+        //{
+        //    //PointTransforms[i].position = list[i];
+        //    opts.Add("easetype", iTween.EaseType.linear);
+        //    var local_pos = pt.localPosition;
+        //    var world_pos = planeObj.transform.TransformPoint(local_pos);
+        //    // var world_pos = planeObj.transform.TransformPoint(PointTransforms[i].localPosition);
+        //    opts.Add("x", world_pos.x);
+        //    opts.Add("y", world_pos.y);
+        //    opts.Add("z", world_pos.z);
+        //    opts.Add("time", 0.5f);
+        //    //iTween.MoveTo(trailObj, world_pos, Period);
+        //    iTween.MoveTo(trailObj, opts);
+        //    opts.Clear();
+        //}
 
-    //    Vector3[] path = { topLeft, topRight, bottomRight, bottomLeft, back };
+        //trailObj.transform.position = Vector3.Lerp(PointTransforms[0].position, PointTransforms[1].position, Time.time);
 
-    //    Hashtable opts = new Hashtable();
-    //    for (; ; )
-    //    {
-    //        foreach(var pt in path)
-    //        {
-    //            opts.Add("easetype", iTween.EaseType.linear);
-    //            opts.Add("x", pt.x);
-    //            opts.Add("y", pt.y);
-    //            opts.Add("z", pt.z);
-    //            opts.Add("time", 0.5f);
-    //            //iTween.MoveTo(trailObj, world_pos, Period);
-    //            iTween.MoveTo(trailObj, opts);
-    //            opts.Clear();
-    //            //yield return new WaitForSeconds(Period);
-    //        }
-    //    }
 
-    //}
+        //iTween.MoveTo(trailObj, iTween.Hash("path", list,
+        //    "time", 10, "looptype", "loop", "isLocal", true));
+    }
 
     // should be called by display manager when it receives positions from backend
     public void ShowCurrentFlow(float xmin, float xmax, float ymin, float ymax)
@@ -115,11 +115,27 @@ public class AnimateCurrentManager : MonoBehaviour
         float ymin_conv = (y_orig - ymin);
         float ymax_conv = (y_orig - ymax);
 
-        Vector3 topLeft = new Vector3(xmin_conv, ymin_conv, -10);
-        Vector3 topRight = new Vector3(xmax_conv, ymin_conv, -10);
-        Vector3 bottomRight = new Vector3(xmax_conv, ymax_conv, -10);
-        Vector3 bottomLeft = new Vector3(xmin_conv, ymax_conv, -10);
-        Vector3 back = new Vector3(xmin_conv, ymin_conv, -10);
+        //Vector3 topLeft = new Vector3(-233.5f, 152, -20);
+        ////Vector3 midTop = new Vector3(0, 152, -20);
+        //Vector3 topRight = new Vector3(233.5f, 152, -10);
+        ////Vector3 midRight = new Vector3(233.5f, 0, -50);
+        //Vector3 bottomRight = new Vector3(233.5f, -152, -10);
+        ////Vector3 midBottom = new Vector3(0, -152, -20);
+        //Vector3 bottomLeft = new Vector3(-233.5f, -152, -10);
+        ////Vector3 midLeft = new Vector3(-233.5f, 0, -20);
+        //Vector3 back = new Vector3(-233.5f, 152, -10);
+
+        Vector3 topLeft = new Vector3(xmin_conv, ymin_conv, -20);
+        Vector3 topMid = new Vector3(0, ymin_conv, -20);
+        Vector3 topRight = new Vector3(xmax_conv, ymin_conv, -20);
+        Vector3 rightMid = new Vector3(xmax_conv, 0, -20);
+        Vector3 bottomRight = new Vector3(xmax_conv, ymax_conv, -20);
+        Vector3 bottomMid = new Vector3(0, ymax_conv, -20);
+        Vector3 bottomLeft = new Vector3(xmin_conv, ymax_conv, -20);
+        Vector3 leftMid = new Vector3(xmin_conv, 0, -20);
+        Vector3 back = new Vector3(xmin_conv, ymin_conv, -20);
+
+        Vector3[] points = { topLeft, topMid, topRight, rightMid, bottomRight, bottomMid, bottomLeft, leftMid, back };
 
         //Vector3 topLeft = new Vector3(-333.5f, 252, -10);
         //Vector3 topRight = new Vector3(333.5f, 252, -10);
@@ -127,7 +143,7 @@ public class AnimateCurrentManager : MonoBehaviour
         //Vector3 bottomLeft = new Vector3(-333.5f, -252, -10);
         //Vector3 back = new Vector3(-333.5f, 252, -10);
 
-        iTween.MoveTo(trailObj, iTween.Hash("path", new Vector3[] { topLeft, topRight, bottomRight, bottomLeft, back },
+        iTween.MoveTo(trailObj, iTween.Hash("path", points,
             "time", 10, "looptype", "loop", "isLocal", true, "orientToPath", true, "easeType", iTween.EaseType.linear));
     }
 }

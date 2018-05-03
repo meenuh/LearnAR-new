@@ -1,1 +1,1 @@
-D:\LearnAR\Build\LearnAR\LearnAR.csproj;x86
+D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\LearnAR.csproj;x86

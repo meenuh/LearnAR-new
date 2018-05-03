@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>b6ed1420-5377-4d3b-a1d3-e3edf6c4177e</PackageIdentityName>
     <PackageIdentityPublisher>CN=DefaultCompany</PackageIdentityPublisher>
-    <IntermediateOutputPath>D:\LearnAR\Build\LearnAR\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>D:\LearnAR\Build\LearnAR\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\LearnAR\Build\LearnAR\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\bin\x86\Debug\LearnAR.exe">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\bin\x86\Debug\LearnAR.exe">
       <PackagePath>entrypoint\LearnAR.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dearm\.nuget\packages\microsoft.applicationinsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
@@ -349,7 +349,7 @@
     <AppxPackagedFile Include="D:\Unity\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Debug\UnityEngineProxy.dll">
       <PackagePath>UnityEngineProxy.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\Unprocessed\WinRTLegacy.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\Unprocessed\WinRTLegacy.dll">
       <PackagePath>WinRTLegacy.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Debug\UnityPlayer.dll">
@@ -373,82 +373,82 @@
     <AppxPackagedFile Include="D:\Unity\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Debug\WinRTBridge.winmd">
       <PackagePath>WinRTBridge.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\Resource.res">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\Resource.res">
       <PackagePath>Resource.res</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\PlaneFinding.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\PlaneFinding.dll">
       <PackagePath>PlaneFinding.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\MicStreamSelector.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\MicStreamSelector.dll">
       <PackagePath>MicStreamSelector.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\GpuTiming.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\GpuTiming.dll">
       <PackagePath>GpuTiming.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\SharingClient.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\SharingClient.dll">
       <PackagePath>SharingClient.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\SpatialUnderstanding.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\SpatialUnderstanding.dll">
       <PackagePath>SpatialUnderstanding.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\Data\boot.config">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\Data\boot.config">
       <PackagePath>Data\boot.config</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\Data\globalgamemanagers">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\Data\globalgamemanagers">
       <PackagePath>Data\globalgamemanagers</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\Data\level0">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\Data\level0">
       <PackagePath>Data\level0</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\Data\Resources\unity default resources">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\Data\Resources\unity default resources">
       <PackagePath>Data\Resources\unity default resources</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\Data\Resources\unity_builtin_extra">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\Data\Resources\unity_builtin_extra">
       <PackagePath>Data\Resources\unity_builtin_extra</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\Data\globalgamemanagers.assets">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\Data\globalgamemanagers.assets">
       <PackagePath>Data\globalgamemanagers.assets</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\Data\sharedassets0.assets">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\Data\sharedassets0.assets">
       <PackagePath>Data\sharedassets0.assets</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\Data\level0.resS">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\Data\level0.resS">
       <PackagePath>Data\level0.resS</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\Data\sharedassets0.assets.resS">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\Data\sharedassets0.assets.resS">
       <PackagePath>Data\sharedassets0.assets.resS</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\Data\managedAssemblies.txt">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\Data\managedAssemblies.txt">
       <PackagePath>Data\managedAssemblies.txt</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\Data\nativePlugins.txt">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\Data\nativePlugins.txt">
       <PackagePath>Data\nativePlugins.txt</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.16299.0\\redist\Debug\x86\ucrtbased.dll">
@@ -457,164 +457,164 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.TilemapModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.TilemapModule.dll">
       <PackagePath>UnityEngine.TilemapModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.TextRenderingModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.TextRenderingModule.dll">
       <PackagePath>UnityEngine.TextRenderingModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.UIModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.UIModule.dll">
       <PackagePath>UnityEngine.UIModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.UIElementsModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.UIElementsModule.dll">
       <PackagePath>UnityEngine.UIElementsModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.TerrainPhysicsModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.TerrainPhysicsModule.dll">
       <PackagePath>UnityEngine.TerrainPhysicsModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.ScreenCaptureModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.ScreenCaptureModule.dll">
       <PackagePath>UnityEngine.ScreenCaptureModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.PhysicsModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.PhysicsModule.dll">
       <PackagePath>UnityEngine.PhysicsModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.Physics2DModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.Physics2DModule.dll">
       <PackagePath>UnityEngine.Physics2DModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.TerrainModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.TerrainModule.dll">
       <PackagePath>UnityEngine.TerrainModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.StyleSheetsModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.StyleSheetsModule.dll">
       <PackagePath>UnityEngine.StyleSheetsModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.SpriteMaskModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.SpriteMaskModule.dll">
       <PackagePath>UnityEngine.SpriteMaskModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.VRModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.VRModule.dll">
       <PackagePath>UnityEngine.VRModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.VideoModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.VideoModule.dll">
       <PackagePath>UnityEngine.VideoModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.VehiclesModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.VehiclesModule.dll">
       <PackagePath>UnityEngine.VehiclesModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.WindModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.WindModule.dll">
       <PackagePath>UnityEngine.WindModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.WebModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.WebModule.dll">
       <PackagePath>UnityEngine.WebModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.UnityWebRequestWWWModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.UnityWebRequestWWWModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestWWWModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.UnityConnectModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.UnityConnectModule.dll">
       <PackagePath>UnityEngine.UnityConnectModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.UnityAnalyticsModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.UnityAnalyticsModule.dll">
       <PackagePath>UnityEngine.UnityAnalyticsModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.UNETModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.UNETModule.dll">
       <PackagePath>UnityEngine.UNETModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.UnityWebRequestTextureModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.UnityWebRequestTextureModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestTextureModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.UnityWebRequestModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.UnityWebRequestModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.UnityWebRequestAudioModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.UnityWebRequestAudioModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestAudioModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.AudioModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.AudioModule.dll">
       <PackagePath>UnityEngine.AudioModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.ARModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.ARModule.dll">
       <PackagePath>UnityEngine.ARModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.AnimationModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.AnimationModule.dll">
       <PackagePath>UnityEngine.AnimationModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.CrashReportingModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.CrashReportingModule.dll">
       <PackagePath>UnityEngine.CrashReportingModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.CoreModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.CoreModule.dll">
       <PackagePath>UnityEngine.CoreModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.ClothModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.ClothModule.dll">
       <PackagePath>UnityEngine.ClothModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.AIModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.AIModule.dll">
       <PackagePath>UnityEngine.AIModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\Assembly-CSharp.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\Assembly-CSharp.dll">
       <PackagePath>Assembly-CSharp.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\Assembly-CSharp-firstpass.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\Assembly-CSharp-firstpass.dll">
       <PackagePath>Assembly-CSharp-firstpass.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.AccessibilityModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.AccessibilityModule.dll">
       <PackagePath>UnityEngine.AccessibilityModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.JSONSerializeModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.JSONSerializeModule.dll">
       <PackagePath>UnityEngine.JSONSerializeModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.InputModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.InputModule.dll">
       <PackagePath>UnityEngine.InputModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.PerformanceReportingModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.PerformanceReportingModule.dll">
       <PackagePath>UnityEngine.PerformanceReportingModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.ParticleSystemModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.ParticleSystemModule.dll">
       <PackagePath>UnityEngine.ParticleSystemModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.ParticlesLegacyModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.ParticlesLegacyModule.dll">
       <PackagePath>UnityEngine.ParticlesLegacyModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.IMGUIModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.IMGUIModule.dll">
       <PackagePath>UnityEngine.IMGUIModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.GameCenterModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.GameCenterModule.dll">
       <PackagePath>UnityEngine.GameCenterModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.dll">
       <PackagePath>UnityEngine.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.DirectorModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.DirectorModule.dll">
       <PackagePath>UnityEngine.DirectorModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.ImageConversionModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.ImageConversionModule.dll">
       <PackagePath>UnityEngine.ImageConversionModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.GridModule.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.GridModule.dll">
       <PackagePath>UnityEngine.GridModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.Timeline.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.Timeline.dll">
       <PackagePath>UnityEngine.Timeline.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\nunit.framework.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\nunit.framework.dll">
       <PackagePath>nunit.framework.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.UI.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.UI.dll">
       <PackagePath>UnityEngine.UI.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.HoloLens.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.HoloLens.dll">
       <PackagePath>UnityEngine.HoloLens.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\UnityEngine.Networking.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\UnityEngine.Networking.dll">
       <PackagePath>UnityEngine.Networking.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\GLTFSerializationUWP.dll">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\GLTFSerializationUWP.dll">
       <PackagePath>GLTFSerializationUWP.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\LearnAR\Build\LearnAR\bin\x86\Debug\Core\LearnAR.exe">
+    <AppxPackagedFile Include="D:\gitrepos\LearnAR\LearnAR\Build\LearnAR\bin\x86\Debug\Core\LearnAR.exe">
       <PackagePath>LearnAR.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
