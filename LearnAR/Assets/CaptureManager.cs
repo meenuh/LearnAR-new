@@ -14,7 +14,14 @@ public class CaptureManager : MonoBehaviour
     private float lastCalled = 0;
     private float debounce = 0.005f;
 
-
+    /**
+     * Captures a photo using the HoloLens and displays it
+     * 
+     * Currently not used/should not be used because it is too difficult to see
+     * where the camera is pointing when taking pictures
+     * 
+     * COMMAND: circuit capture
+     **/ 
     public void CaptureCircuitAndSave()
     {
         if((Time.time - lastCalled) < debounce)
@@ -43,6 +50,10 @@ public class CaptureManager : MonoBehaviour
         });
     }
 
+    /**
+     * Callback for StartPhotoModeAsync in CaptureCircuitAndSave
+     * Displays the image on the canvas and destroys the current photoCapture object
+     **/
     void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptureFrame photoCaptureFrame)
     {
         if (result.success)
@@ -58,11 +69,10 @@ public class CaptureManager : MonoBehaviour
         photoCaptureObject.StopPhotoModeAsync(OnStoppedPhotoMode);
     }
 
-    void Update()
-    {
-
-    }
-
+    /**
+     * Callback for StopPhotoModeAsync
+     * used for cleanup
+     **/ 
     void OnStoppedPhotoMode(PhotoCapture.PhotoCaptureResult result)
     {
         photoCaptureObject.Dispose();

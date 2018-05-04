@@ -15,8 +15,15 @@ def index():
     return "Hello World!"
 
 
+@app.route('/circuit/image/labels', methods=['GET'])
+def get_image_labels():
+    return
+
+
 @app.route('/circuit/image/hololens', methods=['GET'])
 def get_image():
+    circuitAnalysis.execute_get_labels()
+
     with open("sample_img/circuit.jpg", "rb") as image_file:
         encoded_string = base64.b64encode(image_file.read())
 
@@ -30,19 +37,20 @@ def get_image():
 
 @app.route('/circuit/evaluate', methods=['GET'])
 def evaluate():
-    # circuitAnalysis.execute_model()
+    circuitAnalysis.execute_model()
 
     width, height, dataLength, midPoint = cktRecog.getComponentMidPoint('sample_img/circuit.jpg', 'sample_img/out/circuit.json')
     permList = cktRecog.generateLines(width, height, dataLength, midPoint)
     intersect = cktRecog.getIntersection(permList)
     jsonObj = cktRecog.getVertices(intersect)
 
-    # circuitAnalysis.cleanup('sample_img/circuit.jpg', 'sample_img/out/circuit.json')
     return jsonify(jsonObj), 200
 
 
 @app.route('/circuit/image/mobile', methods=['POST'])
 def mobile_post():
+    # circuitAnalysis.cleanup('sample_img/circuit.jpg', 'sample_img/out/circuit.json')
+
     image = request.json['image']
     image = image.replace("data:image/jpeg;base64,", "")
     print(image)
@@ -50,9 +58,9 @@ def mobile_post():
     with open('sample_img/circuit.jpg', 'wb') as fh:
         fh.write(base64.decodebytes(image.encode('utf-8')))
 
-    # temp = Image.open('sample_img/circuit.jpg')
-    # temp = temp.rotate(90, expand=True)
-    # temp.save('sample_img/circuit.jpg')
+    temp = Image.open('sample_img/circuit.jpg')
+    temp = temp.rotate(90, expand=True)
+    temp.save('sample_img/circuit.jpg')
 
     with open("sample_img/circuit.jpg", "rb") as image_file:
         encoded_string = base64.b64encode(image_file.read())

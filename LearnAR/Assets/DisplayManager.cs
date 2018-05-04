@@ -29,6 +29,7 @@ public class DisplayManager : MonoBehaviour
     private string post_uri = "/circuit/image";
     private string get_image_uri = "/circuit/image/hololens";
     private string get_points_uri = "/circuit/evaluate";
+    private string get_labels_img = "/circuit/image/labels";
 
     // Update is called once per frame
     void Update()
@@ -36,6 +37,13 @@ public class DisplayManager : MonoBehaviour
 
     }
 
+    /**
+     * Sends the circuit image to the REST server via POST request
+     * Expects to receive a JSON Object with data about the circuit
+     * 
+     * NOTE: This will not be used in its current state - cannot see where 
+     * you're taking the picture (too difficult) Use mobile application instead
+     **/
     IEnumerator SendCircuitImage(string rawImage)
     {
 
@@ -73,6 +81,9 @@ public class DisplayManager : MonoBehaviour
         }
     }
 
+    /**
+     *  GET request to REST server to retrieve the corner points to animate the current flow
+     **/
     IEnumerator evaluateCircuitConnections()
     {
         StringBuilder str = new StringBuilder();
@@ -103,6 +114,41 @@ public class DisplayManager : MonoBehaviour
         }
     }
 
+    /**
+     * GET request to REST server to retrieve the labelled image and display on the canvas
+     * 
+     **/
+    IEnumerator GetLabeledImage()
+    {
+        iTween.Pause(am.trailObj);
+        StringBuilder str = new StringBuilder();
+        Texture2D temp = new Texture2D(672, 504);
+        using (UnityWebRequest www = UnityWebRequest.Get(host + get_labels_img))
+        {
+            yield return www.SendWebRequest();
+
+            if (www.isNetworkError || www.isHttpError)
+            {
+                Debug.Log(www.error);
+            }
+            else
+            {
+                // Show results as text
+                string result = www.downloadHandler.text;
+
+                Dictionary<string, string> res = JsonConvert.DeserializeObject<Dictionary<string, string>>(result);
+                byte[] image = Convert.FromBase64String(res["image"]);
+                str.Append(res["image"]);
+                temp.LoadImage(image);
+                img.texture = temp;
+            }
+        }
+    }
+
+    /**
+     * GET request to the REST server to retrieve the raw image 
+     * Displays the image on the canvas (no bounding boxes or labels)
+     **/ 
     IEnumerator GetImage()
     {
         StringBuilder str = new StringBuilder();
@@ -114,27 +160,27 @@ public class DisplayManager : MonoBehaviour
             if (www.isNetworkError || www.isHttpError)
             {
                 Debug.Log(www.error);
-                str.Append(www.error);
             }
             else
             {
                 // Show results as text
                 string result = www.downloadHandler.text;
-                str.Append(result);
       
                 Dictionary<string, string> res = JsonConvert.DeserializeObject<Dictionary<string, string>>(result);
                 byte[] image = Convert.FromBase64String(res["image"]);
                 str.Append(res["image"]);
-                t.text = str.ToString();
                 temp.LoadImage(image);
                 img.texture = temp;
-                //temp.LoadRawTextureData(image);
-                //img.texture = temp; 
             }
         }
-        //t.text = str.ToString();
     }
 
+    /**
+     * Callback function for voice command to execute 
+     * Starts coroutine to get image from REST server
+     * 
+     * COMMAND: get image
+     **/
     public void GetCircuitImage()
     {
         if ((Time.time - lastCalled) < debounce)
@@ -145,6 +191,12 @@ public class DisplayManager : MonoBehaviour
         StartCoroutine(GetImage());
     }
 
+    /**
+     * Callback function for voice command to execute 
+     * Starts coroutine to evaluate circuit, get points, and animate
+     * 
+     * COMMAND:show current
+     **/ 
     public void EvaluateCircuit()
     {
         if ((Time.time - lastCalled) < debounce)
@@ -155,6 +207,12 @@ public class DisplayManager : MonoBehaviour
         StartCoroutine(evaluateCircuitConnections());
     }
 
+    /**
+     * Called by CaptureManager's CaptureCircuitAndSave. Once image is saved, DisplayCircuit is called 
+     * to display the image on the canvas. Not used because HoloLens image capture shortcomings.
+     * 
+     * INDIRECT COMMAND: circuit capture
+     **/
     public void DisplayCircuit(Texture2D targetTexture)
     {
         img.texture = targetTexture;
@@ -167,6 +225,10 @@ public class DisplayManager : MonoBehaviour
         StartCoroutine(SendCircuitImage(encodedImg));
     }
 
+    /**
+     * Displays current values for components
+     * Gets called every time voice commands to set component values is called
+     **/ 
     private void DisplayValues()
     {
         StringBuilder str = new StringBuilder();
@@ -178,6 +240,10 @@ public class DisplayManager : MonoBehaviour
         t.text = str.ToString();
     }
 
+    /**
+     * Sets value of voltage to 5v.
+     * COMMAND: set voltage 5
+     **/
     public void SetVoltageFive()
     {
         if (components.ContainsKey("V"))
@@ -192,6 +258,10 @@ public class DisplayManager : MonoBehaviour
         DisplayValues();
     }
 
+    /**
+     * Sets value of R1 to 1k ohm
+     * COMMAND: set r1 1 kilo ohm
+     **/ 
     public void SetR1oneK()
     {
         if (components.ContainsKey("R1"))
@@ -206,6 +276,9 @@ public class DisplayManager : MonoBehaviour
         DisplayValues();
     }
 
+    /**
+     * AnimateFlow is called by evaluateCircuitConnections
+     **/
     public void AnimateFlow(float xmin, float xmax, float ymin, float ymax)
     {
         am.ShowCurrentFlow(xmin, xmax, ymin, ymax);
