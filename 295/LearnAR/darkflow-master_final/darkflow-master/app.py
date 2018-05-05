@@ -37,7 +37,7 @@ def get_image():
 
 @app.route('/circuit/evaluate', methods=['GET'])
 def evaluate():
-    circuitAnalysis.execute_model()
+    # circuitAnalysis.execute_model()
 
     width, height, dataLength, midPoint = cktRecog.getComponentMidPoint('sample_img/circuit.jpg', 'sample_img/out/circuit.json')
     permList = cktRecog.generateLines(width, height, dataLength, midPoint)
