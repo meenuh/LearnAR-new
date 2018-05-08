@@ -17,6 +17,15 @@ def index():
 
 @app.route('/circuit/image/labels', methods=['GET'])
 def get_image_labels():
+    with open("label_img/circuit_label.jpg", "rb") as image_file:
+        encoded_string = base64.b64encode(image_file.read())
+
+    image = {}
+    # print(lastImage)
+    # image['image'] = lastImage.decode('utf-8')
+    image['image'] = encoded_string.decode('utf-8')
+
+    return jsonify(image), 200
     return
 
 
@@ -37,7 +46,7 @@ def get_image():
 
 @app.route('/circuit/evaluate', methods=['GET'])
 def evaluate():
-    circuitAnalysis.execute_model()
+    # circuitAnalysis.execute_model()
 
     width, height, dataLength, midPoint = cktRecog.getComponentMidPoint('sample_img/circuit.jpg', 'sample_img/out/circuit.json')
     permList = cktRecog.generateLines(width, height, dataLength, midPoint)
@@ -58,9 +67,9 @@ def mobile_post():
     with open('sample_img/circuit.jpg', 'wb') as fh:
         fh.write(base64.decodebytes(image.encode('utf-8')))
 
-    temp = Image.open('sample_img/circuit.jpg')
-    temp = temp.rotate(90, expand=True)
-    temp.save('sample_img/circuit.jpg')
+    #temp = Image.open('sample_img/circuit.jpg')
+    # temp = temp.rotate(90, expand=True)
+    #temp.save('sample_img/circuit.jpg')
 
     with open("sample_img/circuit.jpg", "rb") as image_file:
         encoded_string = base64.b64encode(image_file.read())
